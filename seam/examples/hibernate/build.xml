@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<project name="Hibernate Booking" default="jboss" basedir=".">
+
+   <target name="jboss" description="Build the Hibernate Booking example artifacts, and deploy to JBoss 4.2.0.GA">
+     	<ant antfile="build-jboss.xml"/>
+   </target>
+   
+   <target name="jboss-embedded" description="Build the JPA artifacts, and deploy to JBoss Embedded in Tomcat">
+      <ant antfile="build-jboss-embedded.xml"/>
+   </target>
+	
+   <target name="jboss-embedded.undeploy" description="Undeploy from JBoss Embedded in Tomcat">
+      <ant antfile="build-jboss-embedded.xml" target="tomcat.undeploy"/>
+   </target>
+	
+   <target name="jboss.undeploy" description="Build the Hibernate Booking example artifacts, and deploy to JBoss 4.2.0.GA">
+        <ant antfile="build-jboss.xml" target="jbosswar.undeploy"/>
+   </target>
+
+
+   <target name="clean" description="Clean up the example">
+     	<ant antfile="build-jboss.xml" target="clean" />
+        <ant antfile="build-jboss-embedded.xml" target="clean" />
+   </target>
+
+   <target name="all" depends="jboss" description="Build Hibernate Booking example, for deployment to all supported application servers"/>
+   
+   <target name="test">
+      <ant antfile="build-jboss.xml" target="test" />
+   </target>
+
+</project>
+

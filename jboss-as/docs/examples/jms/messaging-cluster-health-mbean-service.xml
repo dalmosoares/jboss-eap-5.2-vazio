@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+     The JBoss Messaging service deployment descriptor.
+
+     $Id: messaging-service.xml 3881 2008-03-14 16:01:43Z timfox $
+ -->
+
+<server>
+
+   <!-- MessagingClusterHealthMBean MBean configuration
+        ============================== -->
+
+   <mbean code="org.jboss.jms.server.MessagingClusterHealthMBean"
+      name="jboss.messaging:service=MessagingClusterHealthMBean"
+      xmbean-dd="xmdesc/MessagingClusterHealthMBean-xmbean.xml">
+
+      <!-- The service name of Server Peer -->
+
+      <attribute name="ServerPeer">jboss.messaging:service=ServerPeer</attribute>
+      
+      <!-- The service name of Post Office --> 
+      
+      <attribute name="PostOffice">jboss.messaging:service=PostOffice</attribute>
+
+      <!-- The service name of Persistence Manager -->
+
+      <attribute name="PersistenceManager">jboss.messaging:service=PersistenceManager</attribute>
+
+   </mbean>
+
+</server>

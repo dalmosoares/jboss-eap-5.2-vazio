@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns="http://jboss.com/products/seam/components"
+            xmlns:core="http://jboss.com/products/seam/core"
+            xmlns:cache="http://jboss.com/products/seam/cache"
+            xmlns:jms="http://jboss.com/products/seam/jms"
+            xmlns:remoting="http://jboss.com/products/seam/remoting"           
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation=
+                "http://jboss.com/products/seam/core http://jboss.com/products/seam/core-2.2.xsd
+                 http://jboss.com/products/seam/cache http://jboss.com/products/seam/cache-2.2.xsd
+                 http://jboss.com/products/seam/remoting http://jboss.com/products/seam/remoting-2.2.xsd
+                 http://jboss.com/products/seam/jms http://jboss.com/products/seam/jms-2.2.xsd
+                 http://jboss.com/products/seam/components http://jboss.com/products/seam/components-2.2.xsd">
+
+    <core:init jndi-pattern="@jndiPattern@" debug="true" />
+    
+    <core:manager conversation-timeout="120000"/>
+        
+    <cache:jboss-cache3-provider auto-create="true" configuration="META-INF/cache-configuration.xml" />
+    
+    <remoting:remoting poll-interval="1" poll-timeout="2" debug="false"/>
+    
+    <jms:managed-topic-publisher name="topicPublisher" auto-create="true" topic-jndi-name="topic/chatroomTopic"/>
+
+	<component class="org.jboss.seam.remoting.messaging.SubscriptionRegistry" installed="true">
+        <property name="allowedTopics">chatroomTopic</property>
+    </component>
+
+</components>

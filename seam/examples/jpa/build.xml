@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<project name="JPA Booking" default="jboss5" basedir=".">
+	
+   <target name="jboss5" description="Build the JPA artifacts, suitable for deployment to JBoss 5.0.0.GA">
+     	<ant antfile="build-jboss5.xml"/>
+   </target>
+    
+   <target name="jboss5.undeploy" description="Undeploy JPA example from JBoss AS">
+	    <ant antfile="build-jboss5.xml" target="jbosswar.undeploy"/>
+   </target>
+
+   <target name="clean" description="Clean up the example">
+     	<ant antfile="build-jboss5.xml" target="clean" />
+   </target>
+
+   <target name="all" depends="jboss5"/>
+
+   <target name="test">
+      <ant antfile="build-jboss5.xml" target="test" />
+   </target>
+	
+	<target name="archive">
+		<ant antfile="build-jboss5.xml" target="noejb.archive" />
+	</target>
+
+</project>
+

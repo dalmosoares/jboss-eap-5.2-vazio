@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>org.jboss.seam</groupId>
+   <artifactId>jboss-seam-resteasy</artifactId>
+   <parent>
+   <groupId>org.jboss.seam</groupId>
+      <artifactId>parent</artifactId>
+      <version>@seam.version@</version>
+   </parent>
+
+   <!-- See root pom for notes on how to declare dependencies -->
+
+   <dependencies>
+
+      <dependency>
+         <groupId>org.jboss.seam</groupId>
+         <artifactId>jboss-seam</artifactId>
+         <type>ejb</type>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.resteasy</groupId>
+         <artifactId>resteasy-jaxrs</artifactId>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.resteasy</groupId>
+         <artifactId>resteasy-jaxb-provider</artifactId>
+      </dependency>
+
+      <dependency>
+      	<groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-jettison-provider</artifactId>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.codehaus.jettison</groupId>
+        <artifactId>jettison</artifactId>
+        <exclusions>
+            <exclusion>
+                <groupId>stax</groupId>
+                <artifactId>stax-api</artifactId>
+            </exclusion>
+        </exclusions>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.resteasy</groupId>
+         <artifactId>resteasy-atom-provider</artifactId>
+      </dependency>
+      
+      <dependency>
+        <groupId>jboss.web</groupId>
+        <artifactId>servlet-api</artifactId>
+         <scope>provided</scope>
+      </dependency>
+      
+      <dependency>
+         <groupId>javax.persistence</groupId>
+         <artifactId>persistence-api</artifactId>
+         <scope>provided</scope>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.hibernate</groupId>
+         <artifactId>hibernate-core</artifactId>
+         <scope>provided</scope>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-log4j12</artifactId>
+      </dependency>
+
+       <dependency>
+         <groupId>org.testng</groupId>
+         <artifactId>testng</artifactId>
+         <version>${version.testng}</version>
+         <scope>test</scope>
+         <classifier>jdk15</classifier>  
+         <exclusions>
+           <exclusion>
+             <groupId>junit</groupId>
+             <artifactId>junit</artifactId>
+           </exclusion>
+         </exclusions>
+       </dependency>
+
+   </dependencies>
+
+</project>

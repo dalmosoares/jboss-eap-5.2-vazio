@@ -1,0 +1,13 @@
+antlr-runtime.jar
+commons-beanutils.jar
+drools-decisiontables.jar
+drools-compiler.jar
+ecj.jar
+drools-api.jar
+drools-core.jar
+groovy-all.jar
+jboss-el.jar
+jboss-seam-remoting.jar
+jbpm-jpdl.jar
+mvel2.jar
+richfaces-api.jar

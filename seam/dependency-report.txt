@@ -1,0 +1,264 @@
+					
+-----------------------------------------
+Dependencies for Seam 2.2.6.EAP5
+*****************************************
+-----------------------------------------
+
+		
+					
+					
+-----------------------------------------
+Dependency Tree for core
+*****************************************
+-----------------------------------------
+					
+org.jboss.seam:jboss-seam:ejb:2.2.6.EAP5
++- org.hibernate:hibernate-core:jar:3.3.2.GA_CP05:compile
++- commons-logging:commons-logging:jar:1.1.0.jboss:compile
++- org.hibernate:hibernate-annotations:jar:3.4.0.GA_CP05:compile
++- org.hibernate:hibernate-validator:jar:3.1.0.GA:compile
+|  \- org.hibernate:hibernate-commons-annotations:jar:3.1.0.GA:compile
++- org.hibernate:hibernate-search:jar:3.1.1.GA_CP05:compile
++- org.apache.lucene:lucene-core:jar:2.4.1:compile
++- org.hibernate:hibernate-entitymanager:jar:3.4.0.GA_CP05:compile
++- javassist:javassist:jar:3.12.0.SP1:provided
++- dom4j:dom4j:jar:1.6.1-brew:provided (scope not updated to compile)
++- javax.portlet:portlet-api:jar:1.0:compile
++- jboss.web:servlet-api:jar:2.1.3.GA:provided
++- javax.mail:mail:jar:1.4.2:provided
++- sun-jaxws:jaxws-api:jar:2.1.3:provided
++- sun-jaxws:jsr181-api:jar:2.1.3:provided
++- javax.faces:jsf-api:jar:1.2_13-patch-01:provided
++- javax.servlet.jsp:jsp-api:jar:2.1:provided
++- javax.ejb:ejb-api:jar:3.0:provided
++- javax.xml.soap:saaj-api:jar:1.3:provided
++- javax.jms:jms:jar:1.1:provided
++- sun-jaxws:jsr250-api:jar:2.1.3:provided
++- org.jboss.javaee:jboss-transaction-api:jar:1.0.1.GA:provided (scope not updated to compile)
++- org.codehaus.groovy:groovy-all:jar:1.5.4:compile
++- log4j:log4j:jar:1.2.14:compile
++- javax.el:el-api:jar:1.0:provided
++- javax.persistence:persistence-api:jar:1.0:provided
++- antlr:antlr:jar:2.7.6:compile
++- org.apache.ant:ant-antlr:jar:1.7.0:compile
++- net.sf.ehcache:ehcache:jar:1.2.3:compile
++- org.jboss.cache:jbosscache-core:jar:3.2.11.GA:compile
++- jgroups:jgroups:jar:2.6.22.Final:compile
++- org.drools:drools-core:jar:5.1.0.BRMS-jdk7:compile
+|  +- org.mvel:mvel2:jar:2.0.16:compile
+|  \- org.drools:drools-api:jar:5.1.0.BRMS-jdk7:compile
++- org.drools:drools-compiler:jar:5.1.0.BRMS-jdk7:compile
+|  +- org.antlr:antlr-runtime:jar:3.1.3:compile
+|  \- org.eclipse.jdt.core.compiler:ecj:jar:3.5.1:compile
++- org.drools:drools-decisiontables:jar:5.1.0.BRMS-jdk7:compile
+|  \- org.drools:drools-templates:jar:5.1.0.BRMS-jdk7:compile
++- net.sourceforge.jexcelapi:jxl:jar:2.6.8-seam:compile
++- org.testng:testng:jar:jdk15:5.9:compile
++- org.dbunit:dbunit:jar:2.2:compile
++- org.jbpm.jbpm3:jbpm-jpdl:jar:3.2.13:compile
++- org.jboss.el:jboss-el:jar:1.0_02.CR6:compile
++- org.jboss.seam.embedded:jboss-embedded-api:jar:beta3.SP14:compile
+|  \- org.jboss.microcontainer:jboss-deployers-client-spi:jar:2.0.0.Beta6:compile
+|     \- org.jboss.microcontainer:jboss-deployers-core-spi:jar:2.0.0.Beta6:compile
++- quartz:quartz:jar:1.5.2-brew:compile
++- javax.faces:jsf-impl:jar:1.2_13-patch-01:compile
++- org.tuckey:urlrewritefilter:jar:3.0.4:runtime
++- apache-httpclient:commons-httpclient:jar:3.1:compile
++- commons-codec:commons-codec:jar:1.3:compile
++- org.openid4java:openid4java-nodeps:jar:0.9.6:compile
+|  +- com.google.code.guice:guice:jar:2.0:compile
+|  \- net.jcip:jcip-annotations:jar:1.0:compile
++- org.apache.httpcomponents:httpclient:jar:4.0:compile
+|  \- org.apache.httpcomponents:httpcore:jar:4.0.1:compile
+\- net.sourceforge.nekohtml:nekohtml:jar:1.9.10:compile
+
+					
+					
+-----------------------------------------
+Dependency Tree for debug
+*****************************************
+-----------------------------------------
+					
+org.jboss.seam:jboss-seam-debug:jar:2.2.6.EAP5
++- org.jboss.seam:jboss-seam:ejb:2.2.6.EAP5:compile
+|  \- org.jboss.el:jboss-el:jar:1.0_02.CR6:compile
++- javax.faces:jsf-api:jar:1.2_13-patch-01:provided
++- javax.faces:jsf-impl:jar:1.2_13-patch-01:compile
++- com.sun.facelets:jsf-facelets:jar:1.1.15.B1-patch-01:compile
++- jboss.web:servlet-api:jar:2.1.3.GA:provided
+\- javax.el:el-api:jar:1.0:provided
+
+					
+					
+-----------------------------------------
+Dependency Tree for ui
+*****************************************
+-----------------------------------------
+					
+org.jboss.seam:jboss-seam-ui:jar:2.2.6.EAP5
++- jboss.web:servlet-api:jar:2.1.3.GA:provided
++- javax.servlet.jsp:jsp-api:jar:2.1:provided
++- org.jboss.seam:jboss-seam:ejb:2.2.6.EAP5:compile
+|  \- org.jboss.el:jboss-el:jar:1.0_02.CR6:compile
++- antlr:antlr:jar:2.7.6:compile
++- org.richfaces.framework:richfaces-api:jar:3.3.1.SP3:compile
++- org.richfaces.ui:richfaces-ui:jar:3.3.1.SP3:compile
+|  \- org.richfaces.framework:richfaces-impl:jar:3.3.1.SP3:compile
+|     \- commons-digester:commons-digester:jar:1.8.1:compile
++- commons-collections:commons-collections:jar:3.2.1:compile
++- javax.faces:jsf-api:jar:1.2_13-patch-01:provided
++- org.jbpm.jbpm3:jbpm-jpdl:jar:3.2.13:compile
+|  \- dom4j:dom4j:jar:1.6.1-brew:compile (version managed from 1.6.1)
++- org.hibernate:hibernate-core:jar:3.3.2.GA_CP05:compile
++- com.sun.facelets:jsf-facelets:jar:1.1.15.B1-patch-01:compile
++- javax.el:el-api:jar:1.0:provided
++- commons-beanutils:commons-beanutils:jar:1.8.0:compile
++- javax.persistence:persistence-api:jar:1.0:provided
++- org.hibernate:hibernate-validator:jar:3.1.0.GA:compile
+|  \- org.hibernate:hibernate-commons-annotations:jar:3.1.0.GA:compile
++- org.testng:testng:jar:jdk15:5.9:test
+\- emma:emma:jar:2.0.5312:compile
+
+					
+					
+-----------------------------------------
+Dependency Tree for remoting
+*****************************************
+-----------------------------------------
+					
+org.jboss.seam:jboss-seam-remoting:jar:2.2.6.EAP5
++- org.jboss.seam:jboss-seam:ejb:2.2.6.EAP5:compile
+|  \- org.jboss.el:jboss-el:jar:1.0_02.CR6:compile
++- com.google.gwt:gwt-servlet:jar:1.5.2:compile
++- dom4j:dom4j:jar:1.6.1-brew:compile
++- org.hibernate:hibernate-core:jar:3.3.2.GA_CP05:compile
++- jboss.web:servlet-api:jar:2.1.3.GA:provided
+\- javax.jms:jms:jar:1.1:provided
+
+					
+					
+-----------------------------------------
+Dependency Tree for mail
+*****************************************
+-----------------------------------------
+					
+org.jboss.seam:jboss-seam-mail:jar:2.2.6.EAP5
++- org.jboss.seam:jboss-seam:ejb:2.2.6.EAP5:compile
+|  \- org.jboss.el:jboss-el:jar:1.0_02.CR6:compile
++- org.jboss.seam:jboss-seam-ui:jar:2.2.6.EAP5:compile
+|  \- commons-beanutils:commons-beanutils:jar:1.8.0:compile
++- org.jboss.seam:jboss-seam-pdf:jar:2.2.6.EAP5:compile
++- com.sun.facelets:jsf-facelets:jar:1.1.15.B1-patch-01:compile
++- javax.faces:jsf-api:jar:1.2_13-patch-01:provided
++- javax.mail:mail:jar:1.4.2:provided
++- javax.el:el-api:jar:1.0:provided
+\- org.testng:testng:jar:jdk15:5.9:compile
+
+					
+					
+-----------------------------------------
+Dependency Tree for pdf
+*****************************************
+-----------------------------------------
+					
+org.jboss.seam:jboss-seam-pdf:jar:2.2.6.EAP5
++- com.lowagie:itext:jar:2.1.2:compile
++- com.lowagie:itext-rtf:jar:2.1.2:compile
++- jfree:jfreechart:jar:1.0.13:compile
+|  \- jfree:jcommon:jar:1.0.16:compile
++- org.jboss.seam:jboss-seam:ejb:2.2.6.EAP5:compile
+|  \- org.jboss.el:jboss-el:jar:1.0_02.CR6:compile
++- org.jboss.seam:jboss-seam-ui:jar:2.2.6.EAP5:compile
+|  \- commons-beanutils:commons-beanutils:jar:1.8.0:compile
++- com.sun.facelets:jsf-facelets:jar:1.1.15.B1-patch-01:compile
++- javax.faces:jsf-api:jar:1.2_13-patch-01:provided
++- jboss.web:servlet-api:jar:2.1.3.GA:provided
+\- javax.el:el-api:jar:1.0:provided
+
+					
+					
+-----------------------------------------
+Dependency Tree for excel
+*****************************************
+-----------------------------------------
+					
+org.jboss.seam:jboss-seam-excel:jar:2.2.6.EAP5
++- net.sourceforge.jexcelapi:jxl:jar:2.6.8-seam:compile
++- jfree:jfreechart:jar:1.0.13:compile
+|  \- jfree:jcommon:jar:1.0.16:compile
++- org.jboss.seam:jboss-seam:ejb:2.2.6.EAP5:compile
+|  \- org.jboss.el:jboss-el:jar:1.0_02.CR6:compile
++- org.jboss.seam:jboss-seam-ui:jar:2.2.6.EAP5:compile
+|  \- commons-beanutils:commons-beanutils:jar:1.8.0:compile
++- com.sun.facelets:jsf-facelets:jar:1.1.15.B1-patch-01:compile
++- javax.faces:jsf-api:jar:1.2_13-patch-01:provided
++- jboss.web:servlet-api:jar:2.1.3.GA:provided
++- javax.el:el-api:jar:1.0:provided
+\- org.testng:testng:jar:jdk15:5.9:compile
+
+					
+					
+-----------------------------------------
+Dependency Tree for ioc
+*****************************************
+-----------------------------------------
+					
+org.jboss.seam:jboss-seam-ioc:jar:2.2.6.EAP5
++- org.springframework:spring:jar:2.5.6.SEC03:compile
++- org.jboss.seam:jboss-seam:ejb:2.2.6.EAP5:compile
+|  \- org.jboss.el:jboss-el:jar:1.0_02.CR6:compile
++- javax.el:el-api:jar:1.0:provided
++- org.jboss.javaee:jboss-transaction-api:jar:1.0.1.GA:provided
++- javassist:javassist:jar:3.12.0.SP1:provided
++- javax.persistence:persistence-api:jar:1.0:provided
++- org.hibernate:hibernate-core:jar:3.3.2.GA_CP05:compile
+\- jboss.web:servlet-api:jar:2.1.3.GA:provided
+
+					
+					
+-----------------------------------------
+Dependency Tree for resteasy
+*****************************************
+-----------------------------------------
+					
+org.jboss.seam:jboss-seam-resteasy:jar:2.2.6.EAP5
++- org.jboss.seam:jboss-seam:ejb:2.2.6.EAP5:compile
+|  \- org.jboss.el:jboss-el:jar:1.0_02.CR6:compile
++- org.jboss.resteasy:resteasy-jaxrs:jar:1.2.1.GA_CP02:compile
+|  +- org.jboss.resteasy:jaxrs-api:jar:1.2.1.GA_CP02:compile
+|  +- org.slf4j:slf4j-api:jar:1.5.8-patch-01:compile (version managed from 1.5.8)
+|  +- org.slf4j:jcl-over-slf4j:jar:1.5.8:compile
+|  +- org.apache.httpcomponents:httpclient:jar:4.0:compile
+|  |  \- org.apache.httpcomponents:httpcore:jar:4.0.1:compile
+|  \- net.jcip:jcip-annotations:jar:1.0:compile
++- org.jboss.resteasy:resteasy-jaxb-provider:jar:1.2.1.GA_CP02:compile
++- org.jboss.resteasy:resteasy-jettison-provider:jar:1.2.1.GA_CP02:compile
++- org.codehaus.jettison:jettison:jar:1.2:compile
++- org.jboss.resteasy:resteasy-atom-provider:jar:1.2.1.GA_CP02:compile
++- jboss.web:servlet-api:jar:2.1.3.GA:provided
++- javax.persistence:persistence-api:jar:1.0:provided
++- org.hibernate:hibernate-core:jar:3.3.2.GA_CP05:provided
++- org.slf4j:slf4j-log4j12:jar:1.5.8-patch-01:compile
+\- org.testng:testng:jar:jdk15:5.9:test
+
+					
+					
+-----------------------------------------
+Dependency Tree for gen
+*****************************************
+-----------------------------------------
+					
+org.jboss.seam:jboss-seam-gen:jar:2.2.6.EAP5
++- org.apache.ant:ant:jar:1.7.0:compile
++- org.hibernate:hibernate-tools:jar:3.2.4.GA:runtime
+|  \- org.hibernate:jtidy:jar:r8-20060801:runtime
++- cglib:cglib:jar:2.2:runtime
++- org.objectweb.asm:asm:jar:3.1:runtime
++- freemarker:freemarker:jar:2.3.8:runtime
++- org.eclipse.jdt:core:jar:3.4.2.v_883_R34x:runtime
++- org.eclipse.core:runtime:jar:3.2.0-v20060603:runtime
++- org.eclipse.equinox:common:jar:3.2.0-v20060603:runtime
++- org.eclipse:text:jar:3.2.0-v20060605-1400:runtime
++- org.richfaces.samples:darkX:jar:3.3.1.SP3:runtime
++- org.richfaces.samples:glassX:jar:3.3.1.SP3:runtime
+\- org.richfaces.samples:laguna:jar:3.3.1.SP3:runtime
